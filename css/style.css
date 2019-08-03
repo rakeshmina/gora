@@ -1,0 +1,169 @@
+.gallerypage{
+	width: 100%;
+	height: auto;
+	
+}
+.page{
+	width: 100%;
+	height: 100px;
+	background-image: url(../images/5.jpg);
+}
+.page h1{
+    font-weight: bold;
+    font-size: normal;
+    font-style: italic;
+    color: red;
+}
+.page h2{
+       font-weight: bold;
+    font-size: normal;
+    font-style: italic;
+    color: lawngreen;	
+}
+.linkspart{
+	width: 100%;
+	margin-top: 20px;
+	height: 20px;
+	
+}
+.linkspart a{
+	color: aqua;
+	font-style: italic;
+	font-weight: bold;
+}
+a.active, .linkspart a:hover{
+	background-color: mistyrose;
+	color: aqua;
+
+}
+.Home{
+	margin-left: 20%;
+	width: 60%;
+}
+
+.Home p{
+	margin-left: 20%;
+	width: 60%;
+	color: indigo;
+}
+.Dewali{
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+    display: none;
+	
+}
+.Dewali h1{
+   color: maroon;
+}
+.Dewali p{
+	color: indigo;
+}
+.Dewali .image{
+	width: 35%;
+	margin: 2%;
+	float: left;
+
+}
+.image img{
+     width: 100%;
+     transition: all ease 0.5s;
+     -webkit-transition: scale(1);
+     transform: scale(1);
+     -webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.Makarsakranti{
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+    display: none;
+	
+}
+.Makarsakranti h1{
+   color: maroon;
+}
+.Makarsakranti p{
+	color: indigo;
+}
+.Makarsakranti .image{
+	width: 35%;
+	margin: 2%;
+	float: left;
+
+}
+.image img{
+     width: 100%;
+     transition: all ease 0.5s;
+     -webkit-transition: scale(1);
+     transform: scale(1);
+     -webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.Holi{
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+	display: none;
+	
+}
+.Holi h1{
+   color: maroon;
+}
+.Holi p{
+	color: indigo;
+}
+.Holi .image{
+	width: 35%;
+	margin: 2%;
+
+	float: left;
+
+}
+.image img{
+     width: 100%;
+     transition: all ease 0.5s;
+     -webkit-transition: scale(1);
+     transform: scale(1);
+     -webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}
+.Rakshabandhan{
+	width: 50%;
+	margin-left: 25%;
+	height: auto;
+	display: none;
+	
+}
+.Rakshabandhan h1{
+   color: maroon;
+}
+.Rakshabandhan p{
+	color: indigo;
+}
+.Rakshabandhan .image{
+	width: 35%;
+	margin: 2%;
+	float: left;
+
+}
+.image img{
+     width: 100%;
+     transition: all ease 0.5s;
+     -webkit-transition: scale(1);
+     transform: scale(1);
+     -webkit-transform: scale(1);
+}
+.image img:hover{
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+}

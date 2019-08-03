@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>gallery page</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="gallerypage">
+		<div class="page">
+		<center><h1>This is Gallery page </h1>
+			<h2>Indian Festivals and various other Events</h2></center>
+	</div>
+	<div class="linkspart" >
+		<center><a class="a" href="#">Home</a>   &nbsp
+			<a class="b" href="#">Dewali</a>    &nbsp
+    <a class="c"  href="#">Makarsakranti</a>    &nbsp
+    <a class="d" href="#">Holi</a>    &nbsp
+    <a class="e" href="#">Rakshabandhan</a>
+</center>
+	</div>
+	
+	<div class="content">
+
+        <div class="Home">
+		<p>A festival is a celebration of life. Festivals bring peace and joy to the masses. They break the monotony of life. Indian festivals are numerous. They are of three types- national, religious and seasonal. The first type of festivals i.e. national festivals are celebrated with great patriotic fervor. The second type of festivals depicts the religious association of the people. Third ones mark the change of seasons. The people celebrate their faith or seasonal change with gaiety and enthusiasm. The national festivals include Republic Day, Independence Day, Gandhi Jayanti etc. religious festivals of India include Guru Parav, Holi, Lohir, Buddhapurnima, Mahavir Jayanti, Dussehra, Diwali, Janmastami, Chath, Navaratri, Eid, Christmas the festivals of the Parsees and Jews etc. The seasonal festivals include Bihu, Baisakhi, Onam, Pongal, Basant Panchami etc. Festivals also have a negative influence on the society. Festivals should be celebrated with simplicity. They should be celebrated to promote national integration and communal harmony.</p>
+	</div>
+
+		<div class="Dewali">
+			 <h1>  About Dewali </h1>
+
+			 <p>Diwali is one of India's biggest festivals. The word 'Dewali' means rows of lighted lamps. It is a festival of lights and Hindus celebrate it with joy. During this festival, people light up their houses and shops with Diyas (Small cup-shaped oil lamp made of baked clay).<br>
+				<br>
+            Related to: Kali Puja, Diwali (Jainism), Bandi ...<br>
+            Observed by: Hindus, Sikhs, Jains and Buddhists<br>
+            Begins: Dhanteras, 2 days before Diwali<br>
+            Ends: Bhai Dooj, 2 days after Diwali</p>
+			<div class="image">
+			<img src="images/1.jpg"/></div>
+			<div class="image">
+			<img src="images/2.jpg"/></div>
+			<div class="image">
+			<img src="images/3.jpg"/></div>
+			<div class="image">
+			<img src="images/4.jpg"/></div>
+		</div>
+		<div class="Makarsakranti">
+			 <h1> About Makarsakranti </h1>
+
+			<p>Makara Sankranti is a Hindu festival celebrated in almost all parts of India and Nepal in a myriad of cultural forms. It is a harvest festival. ... Makar Sankranti marks the transition of the Sun into the zodiac sign of Makara rashi (Capricorn) on its celestial path.</p>
+            <div class="image">
+			<img src="images/6.jpg"/></div>
+			<div class="image">
+			<img src="images/7.jpg"/></div>
+			<div class="image">
+			<img src="images/8.jpg"/></div>
+			<div class="image">
+			<img src="images/9.jpg"/></div>
+		</div>
+		<div class="Holi">
+			<h1>About Holi</h1>
+			 <p> Holi is popularly known as the Indian "festival of spring", the "festival of colours", or the "festival of love". The festival signifies the arrival of spring, the end of winter, the blossoming of love, and for many a festive day to meet others, play and laugh, forget and forgive, and repair broken relationships.</p>
+			<div class="image">
+			<img src="images/13.jpg"/></div>
+			<div class="image">
+			<img src="images/12.jpg"/></div>
+			<div class="image">
+			<img src="images/11.jpg"/></div>
+			<div class="image">
+			<img src="images/10.jpg"/></div>
+
+		</div>
+		<div class="Rakshabandhan">
+           <h1>About Rakshabandhan</h1>
+			   <p> Raksha Bandhan, also Rakshabandhan, is a popular, traditionally Hindu, annual rite, or ceremony, which is central to a festival of the same name, celebrated in India, some other parts of South Asia, and among people around the world influenced by Hindu culture.</p>
+           <div class="image">
+			<img src="images/14.jpg"/></div>
+			<div class="image">
+			<img src="images/15.jpg"/></div>
+			<div class="image">
+			<img src="images/16.jpg"/></div>
+			<div class="image">
+			<img src="images/17.jpg"/></div>
+
+		</div>
+	</div>
+
+</div>
+ <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+		$('a').click(function(){
+            //alert("i am click");
+            var selected= $(this);
+            $('a').removeClass('active');
+            $(selected).addClass('active');
+		});
+
+        var  $a = $('.a'),
+        $b = $('.b'),
+        $c = $('.c'),
+        $d = $('.d'),
+        $e = $('.e'),
+        $Home = $('.Home'),
+        $Dewali = $('.Dewali'),
+        $Makarsakranti = $('.Makarsakranti'),
+        $Holi = $('.Holi'),
+        $Rakshabandhan= $('.Rakshabandhan');
+
+        
+        $a.click(function(){
+        	$Home.fadeIn();
+        	$Makarsakranti.fadeOut();
+        	$Holi.fadeOut();
+        	$Rakshabandhan.fadeOut();
+        	$Dewali.fadeOut();
+        });
+        $b.click(function(){
+        	$Dewali.fadeIn();
+        	$Makarsakranti.fadeOut();
+        	$Holi.fadeOut();
+        	$Rakshabandhan.fadeOut();
+        	$Home.fadeOut();
+        });
+        $c.click(function(){
+        	$Makarsakranti.fadeIn();
+        	$Dewali.fadeOut();
+        	$Holi.fadeOut();
+        	$Rakshabandhan.fadeOut();
+        	$Home.fadeOut();
+        });
+        $d.click(function(){
+        	$Holi.fadeIn();
+            $Dewali.fadeOut();
+            $Makarsakranti.fadeOut();
+        	$Rakshabandhan.fadeOut();
+        	$Home.fadeOut();
+        });
+        $e.click(function(){
+        	$Rakshabandhan.fadeIn();
+        	$Dewali.fadeOut();
+        	$Holi.fadeOut();
+        	$Makarsakranti.fadeOut();
+        	$Home.fadeOut();
+        });
+
+	});
+</script>
+
+</body>
+</html>
